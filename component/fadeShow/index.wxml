@@ -1,0 +1,14 @@
+<!--comment/fadeShow/index.wxml-->
+<!-- hidden="{{!showModalStatus}}" -->
+
+<!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" hidden="{{!showModalStatus}}">
+
+
+   ddddd
+
+   <view bindtap="hideModal">取消</view>
+
+</view>

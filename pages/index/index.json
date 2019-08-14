@@ -1,0 +1,6 @@
+{
+   "usingComponents": {
+      "fade_show": "/component/fadeShow/index",
+      "modal_types": "/component/modal_types/index"
+   }
+}
