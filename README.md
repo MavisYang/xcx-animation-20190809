@@ -1,7 +1,23 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-14 17:29:07
+ * @LastEditTime: 2019-08-14 17:36:25
+ * @LastEditors: Please set LastEditors
+ -->
 ### 小程序动画 
 
-1. css 详见 `/utils/animate.wxss`
-2. `wx.createAnimation`
+#### 1. css 详见 `/utils/animate.wxss`
+
+animate.css包含76种动画，使用非常简单。
+[animate.css官网](https://daneden.github.io/animate.css/)
+
+所以在app.wxss中加入 @import './utils/animate.wxss'; 即可。
+
+[微信小程序开发-76种动画 animate.css](https://developers.weixin.qq.com/community/develop/doc/00024648e982c0819e97ac85c5b804)
+
+
+####  2. [wx.createAnimation](https://developers.weixin.qq.com/miniprogram/dev/api/ui/animation/wx.createAnimation.html)
 
 ```
  //显示对话框
@@ -44,9 +60,6 @@ _hideModal() {
           animationData: animation.export(),
           modalStatus: false
       })
-      let myEventDetail = {} // detail对象，提供给事件监听函数
-      let myEventOption = {} // 触发事件的选项
-      this.triggerEvent('close', myEventDetail, myEventOption)
     }.bind(this), 200)
 }
 ```

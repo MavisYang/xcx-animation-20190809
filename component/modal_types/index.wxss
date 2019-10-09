@@ -24,7 +24,7 @@
    text-align: center;
    box-sizing: border-box;
    height: 412rpx;
-   animation: modalAnimation 0.3s ease-in-out;
+   animation: playAnimation 0.3s ease-in-out;
 }
 
 .paly_title {
@@ -66,6 +66,16 @@
 }
 
 @keyframes modalAnimation {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+@keyframes playAnimation {
    from {
       opacity: 0;
       transform: translate3d(0, 100%, 0);
